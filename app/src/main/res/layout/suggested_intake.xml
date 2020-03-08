@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/YourWeight"
+        android:hint="Please enter your weight in pounds."
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <EditText
+        android:id="@+id/YourHeight"
+        android:hint="Please enter your height in inches."
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <EditText
+        android:id="@+id/YourAge"
+        android:hint="Please enter your age in years."
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Select your sex and your basal metabolic rate and suggested caloric intake will be displayed">
+    </TextView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/male"
+            android:text="Male"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_alignParentLeft="true"
+            android:layout_height="wrap_content"
+            />
+        <Button
+            android:id="@+id/female"
+            android:text="Female"
+            android:layout_weight="0.5"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
